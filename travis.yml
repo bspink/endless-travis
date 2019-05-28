@@ -1,0 +1,11 @@
+dist: xenial
+language: node_js
+node_js:
+  - "10.15.3"
+
+env:
+  global:
+    - secure: "IfgIG/n3VUkD/tcnYbZ88wWkf4K1wXww6+ZsMJrE0aI5a3z4C4y4fRl7rf4ucli64HFzEt7wYNyY12smBuhmofd4CqYWA+MLzPAQ0ceJVCF79KDkr7feYs2HGrxKq98if64VeZzDEyNxIm9kCxfYt7/8CLWFhRLOk49uxiPm4ExSvVaaIQuCN2qYuWuNL+7GGmXZG7nq1ISHW4aj5BrT7iYkr7TpmZo7piUAbc+uw92gW/oAsS3GsThq12BmVoY+aQes5E6qGN94EIJfLdsdIf1qG34fV6b6qNQifel8HC5VixJTrlmyEEAQ/QtGclmdR7CoW7104DSkAS02UU/KAMdr1+9CqdbQJiJ0SLonBdmdQ/Sf/pVNxhVIh5ykDnuZNnq/GVKBSxXk3DjYt5SH1F8RTsPIErnxJ6TIZNvH7pAnKXd9DjLv4VqMj6GxlEK+9wsAjQfhvt+ouCrycbvny824O+IIOdVOXN8kw2yWLND3MWOuqACZkAsk0YhgGDFxGHsBbJyb0iWF6TTssmbACeKp+w9PSmQTFc4ALDkJcHdZD5laJjIFBuljrggYxpqj31tzFiUq8XBoYXRLT7R5U/pYew/Re8iCD2L7avQW+cLpRFDV2ADopIogG2DdeRPSsqCeR4CKNQ9HqFEVxdGQz8O3XnH/XkAYc0BC3FkIFFI="
+
+if: type = push
+script: ./make-commit.sh
